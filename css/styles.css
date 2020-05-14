@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(26, 185, 174);
+  text-align: center;
+}
+
+body {
+  background: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -100px;
+}
+
+.container {
+  margin-top: 10vh;
+}
+
+h1 {
+  margin-bottom: 7vh;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.dropdown {
+  padding: 7px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(164, 243, 224);
+}
+
+.dropdown:focus,
+button:focus {
+  outline: none;
+}
+
+button {
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(105, 212, 187);
+  color: rgb(215, 253, 241);
+  margin-bottom: 7vh;
+}
+
+.cards div {
+  width: 180px;
+  height: 160px;
+  background-color: rgb(178, 246, 230);
+  border-radius: 20px;
+  padding-top: 3vh;
+}
+
+.cards {
+  display: flex;
+  width: 40vw;
+  margin: auto;
+  justify-content: space-between;
+}
+
+h2 {
+  margin-bottom: 3vh;
+}
+
+p {
+  font-size: 30px;
+}
+
+.recovered {
+  color: rgb(50, 141, 50);
+}
+
+.deaths {
+  color: rgb(214, 66, 66);
+}
+
+@media (max-width: 600px) {
+  body {
+    background: none;
+    background-color: rgb(209, 235, 232);
+  }
+
+  .cards{
+   flex-direction: column;
+   margin: auto;
+   height: 55vh;
+  }
+
+  .cards div{
+   height: 120px;
+  }
+
+  h2{
+   margin-bottom: 0.8vh;
+  }
+}
